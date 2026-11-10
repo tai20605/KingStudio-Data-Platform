@@ -1,0 +1,48 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+secrets/
+*service-account*.json
+*service_account*.json
+*-key.json
+*_key.json
+*.pem
+*.p12
+id_rsa*
+id_ed25519*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Airflow runtime
+logs/
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# Downloaded data and Ads Manager exports
+data/
+*.csv
+
+# Course brief
+*.pdf
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+
+# Docs
+docs/
+
+CLAUDE.md
