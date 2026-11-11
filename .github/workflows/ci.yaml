@@ -75,8 +75,6 @@ jobs:
             requirements-dev.txt
             requirements-airflow.txt
 
-      # The constraints file pins every Airflow dependency to versions
-      # the Airflow project has tested together.
       - name: Install Airflow and dev tools
         run: >
           pip install -r requirements-dev.txt -r requirements-airflow.txt
