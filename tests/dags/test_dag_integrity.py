@@ -11,5 +11,5 @@ DAG_FOLDER = Path(__file__).resolve().parents[2] / "airflow" / "dags"
 
 
 def test_no_import_errors():
-    dag_bag = DagBag(dag_folder=str(DAG_FOLDER), include_examples=False)
+    dag_bag = DagBag(dag_folder=str(DAG_FOLDER))
     assert not dag_bag.import_errors, f"DAG import errors: {dag_bag.import_errors}"
